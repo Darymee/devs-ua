@@ -23,7 +23,49 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--accent-color);
+
+  &::before {
+    content: '';
+    display: block;
+    margin-bottom: 40px;
+    width: 33px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
+// .advantages__label:first-child:before {
+//   background-image: url(../images/apple-bucket.png);
+//   @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     & {
+//       background-image: url('../images/apple-bucket@2x.png');
+//     }
+//   }
+// }
+
+// .list-item:nth-child(2):before {
+//   background-image: url(../images/bucket.png);
+//   @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     & {
+//       background-image: url('../images/bucket@2x.png');
+//     }
+//   }
+// }
+
+// .advantages__label:last-child:before {
+//   background-image: url(../images/heart.png);
+//   @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     & {
+//       background-image: url('../images/heart@2x.png');
+//     }
+//   }
+// }
 
 .advantages__text {
   font-family: 'DM Sans';
