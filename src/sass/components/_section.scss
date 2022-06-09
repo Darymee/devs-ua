@@ -2,8 +2,6 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
-  background-color: var(--background-light-pink-color);
-
   @media screen and (min-width: 1280px) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -15,6 +13,10 @@
     padding-top: 0;
     padding-bottom: 40px;
   }
+}
+
+.section--pink {
+  background-color: var(--background-light-pink-color);
 }
 
 .section--light {
@@ -35,7 +37,6 @@
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
-    line-height: 1.15;
   }
 
   @media screen and (min-width: 1280px) {
