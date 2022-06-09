@@ -1,0 +1,47 @@
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.section--without-top-padding {
+  @media screen and (max-width: 1279px) {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+}
+
+.section--pink {
+  background-color: var(--background-light-pink-color);
+}
+
+.section--light {
+  background-color: var(--background-white-color);
+}
+
+.section__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+}
