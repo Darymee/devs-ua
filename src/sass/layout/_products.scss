@@ -44,12 +44,15 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    // flex-wrap: wrap;
-    margin: -16px;
+    flex-wrap: wrap;
+    margin: -8px;
+    padding: 0 24px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin: -32px;
+    margin: -16px;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -59,13 +62,16 @@
   flex-direction: column;
   // justify-content: space-between;
   border-radius: 24px;
+  // min-width: 280px;
+  margin: 0 auto;
 
   @media screen and (max-width: 479.98px) {
     // height: 489px;
+    // min-width: none;
     height: 100%;
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 160px 32px 40px;
+    // max-width: 320px;
+    // margin: 0 auto;
+    padding: 160px 35px 40px;
 
     &:not(:last-child) {
       margin-bottom: 140px;
@@ -74,8 +80,11 @@
 
   @media screen and (min-width: 480px) and (max-width: 767.98px) {
     // height: 489px;
+    // min-width: 480px;
     height: 100%;
-    padding: 160px 32px 40px;
+    padding: 160px 35px 40px;
+    // max-width: 320px;
+    margin: 0 auto;
 
     &:not(:last-child) {
       margin-bottom: 140px;
@@ -85,19 +94,19 @@
   @media screen and (min-width: 768px) {
     // height: 473px;
     height: 100%;
-    margin: 16px;
-    flex-basis: calc((100% - 96px) / 3);
+    margin: 8px;
+    flex-basis: calc((100% - 48px) / 3);
 
-    padding: 118px 32px 40px;
+    padding: 118px 25px 40px;
   }
 
   @media screen and (min-width: 1280px) {
     // height: 535px;
     height: 100%;
-    margin: 32px;
+    margin: 16px;
     flex-basis: calc((100% - 96px) / 3);
 
-    padding: 165px 32px 60px;
+    padding: 165px 60px 60px;
   }
 
   &:first-child {
@@ -108,7 +117,7 @@
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -140px);
       display: block;
       width: 280px;
       height: 280px;
@@ -117,16 +126,18 @@
       background-image: url('/src/images/home-pic-320.png');
 
       @media screen and (min-width: 768px) {
-        top: -50%;
+        top: 0;
         left: 50%;
-        transform: translate(-50%, 50%);
+        transform: translate(-50%, -138px);
         width: 224px;
         height: 224px;
         background-image: url('/src/images/home-pic-768.png');
       }
 
       @media screen and (min-width: 1280px) {
-        transform: translate(-50%);
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -261px);
         width: 394px;
         height: 394px;
         background-image: url('/src/images/home-pic1-1200.png');
@@ -141,7 +152,7 @@
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -140px);
       display: block;
       width: 280px;
       height: 280px;
@@ -150,15 +161,17 @@
       background-image: url('/src/images/home-pic-320-1.png');
 
       @media screen and (min-width: 768px) {
-        top: -50%;
+        top: 0;
         left: 50%;
-        transform: translate(-50%, 50%);
+        transform: translate(-50%, -138px);
         width: 224px;
         height: 224px;
         background-image: url('/src/images/home-pic2-768.png');
 
         @media screen and (min-width: 1280px) {
-          transform: translate(-50%);
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, -261px);
           width: 394px;
           height: 394px;
           background-image: url('/src/images/home-pic2-1200.png');
@@ -175,7 +188,7 @@
       position: absolute;
       top: 0;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -140px);
       display: block;
       width: 280px;
       height: 280px;
@@ -184,15 +197,17 @@
       background-image: url('/src/images/home-pic-320-2.png');
 
       @media screen and (min-width: 768px) {
-        top: -50%;
+        top: 0;
         left: 50%;
-        transform: translate(-50%, 50%);
+        transform: translate(-50%, -138px);
         width: 224px;
         height: 224px;
         background-image: url('/src/images/home-pic3-768.png');
 
         @media screen and (min-width: 1280px) {
-          transform: translate(-50%);
+          top: 0;
+          left: 50%;
+          transform: translate(-50%, -261px);
           width: 394px;
           height: 394px;
           background-image: url('/src/images/home-pic3-1200-.png');
@@ -243,6 +258,29 @@
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     margin-bottom: 60px;
+  }
+}
+
+.cards__top {
+  margin-bottom: 32px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  /* or 21px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: var(--white-color);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 }
 
