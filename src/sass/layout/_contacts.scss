@@ -1,0 +1,111 @@
+.contacts__card-list {
+  padding-inline-start: 0px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -16px;
+  }
+}
+
+.contacts__card {
+  min-width: 280px;
+  padding: 40px 32px;
+  border: 1px solid #e1e1e1;
+  border-radius: 30px;
+
+  background-color: var(--white-color);
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 224px;
+    margin: 16px;
+    flex-basis: calc((100% - 96px) / 3);
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 395px;
+  }
+}
+
+.contacts__top-text {
+  display: inline-block;
+  min-height: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 20px;
+
+  font-style: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+
+  &--yellow {
+    background-color: var(--card-text-yellow-bgc);
+  }
+
+  &--green {
+    background-color: var(--card-text-green-bgc);
+  }
+
+  &--pink {
+    background-color: var(--card-text-pink-bgc);
+  }
+}
+
+.contacts__title,
+.contacts__work-time-text,
+.contacts__work-time-hours {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1.86;
+  color: var(--black-text-color);
+}
+
+.contacts__work-time-hours {
+  color: var(--pink-color);
+}
+
+.contacts__bottom-text,
+.contacts__link--email,
+.contacts__link--tel {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1.15;
+  color: var(--grey-text-color);
+}
+
+.contacts__work-time-list {
+  padding-inline-start: 0px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts__phone-mail-list,
+.contacts__button-list {
+  padding-inline-start: 0px;
+}
+
+.contacts__button-list {
+  margin-top: 32px;
+}
+
+.contacts__button-item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.contacts__button {
+  display: block;
+  margin: 0 auto;
+}
