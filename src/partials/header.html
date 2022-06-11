@@ -2,55 +2,74 @@
 <header class="header">
   <div class="container header__container">
     <a href="#" class="header__logo">
-      <img src="" alt="Логотип" width="50" class="header__logo__icon">
+      <!-- <img src="" alt="Логотип" width="50" class="header__logo__icon" /> -->
     </a>
     <nav class="header__nav">
       <ul class="header__nav__list">
         <li class="header__nav__item--current"><a href="#Home">Home</a></li>
         <li class="header__nav__item"><a href="#About-us">About us</a></li>
-        <li class="header__nav__item"><a href="#How it’s made?">How it’s made?</a></li>
-        <li class="header__nav__item"><a href="#Our products">Our products</a></li>
+        <li class="header__nav__item">
+          <a href="#How it’s made?">How it’s made?</a>
+        </li>
+        <li class="header__nav__item">
+          <a href="#Our products">Our products</a>
+        </li>
         <li class="header__nav__item"><a href="#Contact">Contact</a></li>
       </ul>
     </nav>
 
     <button class="menu-toggle menu-mobile-open">
       <svg height="12" width="20">
-          <use href="./images/sprite.svg#Burger"></use>
+        <use href="images/sprite.svg#Burger"></use>
       </svg>
     </button>
 
-    <button type="button" class="header__button-menu button--white" data-modal-open>
+    <button
+      type="button"
+      class="header__button-menu button--white"
+      data-modal-open
+    >
       Buy now
       <svg height="12" width="20">
-          <use href="./images/sprite.svg#arrow-right"></use>
+        <use href="images/sprite.svg#arrow-right"></use>
       </svg>
     </button>
 
     <!-- MOBILE MENU -->
-    
+
     <div class="mobile__menu is-hidden">
       <div class="container mobile__menu__container">
-
         <button class="menu-toggle menu-mobile-close">
           <svg height="12" width="20">
-              <use href="./images/sprite.svg#close"></use>
+            <use href="images/sprite.svg#close"></use>
           </svg>
         </button>
 
         <button type="button" class="header__button-menu button--white">
           Buy now
           <svg height="12" width="20">
-              <use href="./images/sprite.svg#arrow-right"></use>
+            <use href="images/sprite.svg#arrow-right"></use>
           </svg>
         </button>
 
         <ul class="mobile__menu__nav__list">
-          <li class="mobile__menu__nav__item--current"><a  class="mobile__menu__list" href="#Home">Home</a></li>
-          <li class="mobile__menu__nav__item"><a  class="mobile__menu__list" href="#About-us">About us</a></li>
-          <li class="mobile__menu__nav__item"><a  class="mobile__menu__list" href="#How it’s made?">How it’s made?</a></li>
-          <li class="mobile__menu__nav__item"><a  class="mobile__menu__list" href="#Our products">Our products</a></li>
-          <li class="mobile__menu__nav__item"><a  class="mobile__menu__list" href="#Contact">Contact</a></li>
+          <li class="mobile__menu__nav__item--current">
+            <a class="mobile__menu__list" href="#Home">Home</a>
+          </li>
+          <li class="mobile__menu__nav__item">
+            <a class="mobile__menu__list" href="#About-us">About us</a>
+          </li>
+          <li class="mobile__menu__nav__item">
+            <a class="mobile__menu__list" href="#How it’s made?"
+              >How it’s made?</a
+            >
+          </li>
+          <li class="mobile__menu__nav__item">
+            <a class="mobile__menu__list" href="#Our products">Our products</a>
+          </li>
+          <li class="mobile__menu__nav__item">
+            <a class="mobile__menu__list" href="#Contact">Contact</a>
+          </li>
         </ul>
       </div>
     </div>
