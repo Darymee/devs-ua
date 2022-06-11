@@ -9,10 +9,41 @@
 
     content: '';
     display: inline-block;
-    background-size: cover;
+    background-size: contain;
     width: 33px;
     height: 50px;
-    background-image: url('../images/apple-bucket@2x.png');
+  }
+  &:first-child::before {
+    background-image: url('../images/bucket.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/bucket@2x.png');
+      }
+    }
+  }
+  &:nth-child(2)::before {
+    width: 50px;
+    background-image: url('../images/apple-bucket.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/apple-bucket@2x.png');
+      }
+    }
+  }
+  &:last-child::before {
+    width: 44px;
+    background-image: url('../images/heart.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('../images/heart@2x.png');
+      }
+    }
   }
 }
 
