@@ -1,5 +1,5 @@
 //-------------- section PRODUCTS
-
+// ---------------------(Ihor Komar add this code)-----------------------------
 .label-title {
   margin-bottom: 15px;
 
@@ -108,7 +108,7 @@
     height: 280px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/src/images/home-pic-320.png');
+    background-image: url('../images/home-pic-320.png');
 
     @media screen and (min-width: 768px) {
       top: 0;
@@ -116,7 +116,7 @@
       transform: translate(-50%, -138px);
       width: 224px;
       height: 224px;
-      background-image: url('/src/images/home-pic-768.png');
+      background-image: url('../images/home-pic-768.png');
     }
 
     @media screen and (min-width: 1280px) {
@@ -125,21 +125,21 @@
       transform: translate(-50%, -261px);
       width: 394px;
       height: 394px;
-      background-image: url('/src/images/home-pic1-1200.png');
+      background-image: url('../images/home-pic1-1200.png');
     }
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: url('/src/images/home-pic-320-@2x.png');
+        background-image: url('../images/home-pic-320-@2x.png');
 
         @media screen and (min-width: 768px) {
-          background-image: url('/src/images/home-pic-768@2x.png');
+          background-image: url('../images/home-pic-768@2x.png');
         }
 
         @media screen and (min-width: 1280px) {
-          background-image: url('/src/images/home-pic1-1200-@2x.png');
+          background-image: url('../images/home-pic1-1200-@2x.png');
         }
       }
     }
@@ -156,7 +156,7 @@
     height: 280px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/src/images/home-pic-320-1.png');
+    background-image: url('../images/home-pic-320-1.png');
 
     @media screen and (min-width: 768px) {
       top: 0;
@@ -164,7 +164,7 @@
       transform: translate(-50%, -138px);
       width: 224px;
       height: 224px;
-      background-image: url('/src/images/home-pic2-768.png');
+      background-image: url('../images/home-pic2-768.png');
 
       @media screen and (min-width: 1280px) {
         top: 0;
@@ -172,7 +172,7 @@
         transform: translate(-50%, -261px);
         width: 394px;
         height: 394px;
-        background-image: url('/src/images/home-pic2-1200.png');
+        background-image: url('../images/home-pic2-1200.png');
       }
     }
 
@@ -180,14 +180,14 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: url('/src/images/home-pic-320-1@2x.png');
+        background-image: url('../images/home-pic-320-1@2x.png');
 
         @media screen and (min-width: 768px) {
-          background-image: url('/src/images/home-pic2-768@2x.png');
+          background-image: url('../images/home-pic2-768@2x.png');
         }
 
         @media screen and (min-width: 1280px) {
-          background-image: url('/src/images/home-pic2-1200@2x.png');
+          background-image: url('../images/home-pic2-1200@2x.png');
         }
       }
     }
@@ -204,7 +204,7 @@
     height: 280px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/src/images/home-pic-320-2.png');
+    background-image: url('../images/home-pic-320-2.png');
 
     @media screen and (min-width: 768px) {
       top: 0;
@@ -212,7 +212,7 @@
       transform: translate(-50%, -138px);
       width: 224px;
       height: 224px;
-      background-image: url('/src/images/home-pic3-768.png');
+      background-image: url('../images/home-pic3-768.png');
 
       @media screen and (min-width: 1280px) {
         top: 0;
@@ -220,7 +220,7 @@
         transform: translate(-50%, -261px);
         width: 394px;
         height: 394px;
-        background-image: url('/src/images/home-pic3-1200-.png');
+        background-image: url('../images/home-pic3-1200-.png');
       }
     }
 
@@ -228,14 +228,14 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: url('/src/images/home-pic-320-2@2x.png');
+        background-image: url('../images/home-pic-320-2@2x.png');
 
         @media screen and (min-width: 768px) {
-          background-image: url('/src/images/home-pic3-768@2x.png');
+          background-image: url('../images/home-pic3-768@2x.png');
         }
 
         @media screen and (min-width: 1280px) {
-          background-image: url('/src/images/home-pic3-1200-@2x.png');
+          background-image: url('../images/home-pic3-1200-@2x.png');
         }
       }
     }
@@ -272,7 +272,7 @@
     height: 6px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('/src/images/point.png');
+    background-image: url('../images/point.png');
   }
 }
 
@@ -345,3 +345,4 @@
   width: 40px;
   height: 40px;
 }
+// -------(Ihor Komar finished code)-------------------------------------------------
