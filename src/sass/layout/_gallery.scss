@@ -1,54 +1,42 @@
+// SECTION GALLERY
 .section--gradient {
     background: linear-gradient (0deg, var(--background-white-color) 60%, var(--background-light-pink-color) 0);
 }
 
-.gallery__grid {
+.gallery__masonry {
     max-width: 1200px;
     margin: 0 auto;
-
 }
-// .stamp1 {
-//     position: absolute;
-//     left: 0;
-//     top: 0;
-//     width: 20%;
-//     height: 70px;
-//   }
-  .stamp2 {
-    // position: absolute;
-    // right: 0;
-    // bottom: 0;
+
+.gallery__items-space {
     width: 20%;
     height: 20%;
-  }
-.grid-sizer {
-    width: 10%;
-}
-.gutter-size {
-    width: 20px;
 }
 
 .gallery__item { 
     width: 15%;
-    padding: 5px;
     margin-bottom: 6px;
     float: left;
     border-radius: 16px;
     overflow: hidden;
+    scale: 1;
+    transition: transform 250ms linear;
+
+    @media screen and (min-width: 480px) {
+        padding: 3px;
+      }
 
     &:hover,
     &:focus {
         position: absolute;
         z-index: 99;
-        transform: scale(1.5);
-        transition: transform 250ms linear;
+        transform: scale(1.3);
   }
 }
 
- .grid-item--width2 { 
+ .gallery__item-big { 
     width: 30%; 
 }
-
-.persent-size {
+.main-box {
     width: 15%;
 }
