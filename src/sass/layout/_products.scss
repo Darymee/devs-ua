@@ -96,28 +96,84 @@
 
   &:first-child {
     background-color: var(--card-text-pink-bgc);
+  }
 
-    &::before {
-      content: '';
-      position: absolute;
+  &:nth-child(2) {
+    background-color: var(--card-text-yellow-bgc);
+  }
+
+  &:last-child {
+    background-color: var(--card-text-green-bgc);
+  }
+
+  &:first-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -140px);
+    display: block;
+    width: 280px;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/src/images/home-pic-320.png');
+
+    @media screen and (min-width: 768px) {
       top: 0;
       left: 50%;
-      transform: translate(-50%, -140px);
-      display: block;
-      width: 280px;
-      height: 280px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url('/src/images/home-pic-320.png');
+      transform: translate(-50%, -138px);
+      width: 224px;
+      height: 224px;
+      background-image: url('/src/images/home-pic-768.png');
+    }
 
-      @media screen and (min-width: 768px) {
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -138px);
-        width: 224px;
-        height: 224px;
-        background-image: url('/src/images/home-pic-768.png');
+    @media screen and (min-width: 1280px) {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -261px);
+      width: 394px;
+      height: 394px;
+      background-image: url('/src/images/home-pic1-1200.png');
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('/src/images/home-pic-320-@2x.png');
+
+        @media screen and (min-width: 768px) {
+          background-image: url('/src/images/home-pic-768@2x.png');
+        }
+
+        @media screen and (min-width: 1280px) {
+          background-image: url('/src/images/home-pic1-1200-@2x.png');
+        }
       }
+    }
+  }
+
+  &:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -140px);
+    display: block;
+    width: 280px;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/src/images/home-pic-320-1.png');
+
+    @media screen and (min-width: 768px) {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -138px);
+      width: 224px;
+      height: 224px;
+      background-image: url('/src/images/home-pic2-768.png');
 
       @media screen and (min-width: 1280px) {
         top: 0;
@@ -125,77 +181,70 @@
         transform: translate(-50%, -261px);
         width: 394px;
         height: 394px;
-        background-image: url('/src/images/home-pic1-1200.png');
+        background-image: url('/src/images/home-pic2-1200.png');
       }
     }
-  }
-  &:nth-child(2) {
-    background-color: var(--card-text-yellow-bgc);
 
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, -140px);
-      display: block;
-      width: 280px;
-      height: 280px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url('/src/images/home-pic-320-1.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('/src/images/home-pic-320-1@2x.png');
 
-      @media screen and (min-width: 768px) {
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -138px);
-        width: 224px;
-        height: 224px;
-        background-image: url('/src/images/home-pic2-768.png');
+        @media screen and (min-width: 768px) {
+          background-image: url('/src/images/home-pic2-768@2x.png');
+        }
 
         @media screen and (min-width: 1280px) {
-          top: 0;
-          left: 50%;
-          transform: translate(-50%, -261px);
-          width: 394px;
-          height: 394px;
-          background-image: url('/src/images/home-pic2-1200.png');
+          background-image: url('/src/images/home-pic2-1200@2x.png');
         }
       }
     }
   }
 
-  &:last-child {
-    background-color: var(--card-text-green-bgc);
+  &:last-child::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -140px);
+    display: block;
+    width: 280px;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/src/images/home-pic-320-2.png');
 
-    &::before {
-      content: '';
-      position: absolute;
+    @media screen and (min-width: 768px) {
       top: 0;
       left: 50%;
-      transform: translate(-50%, -140px);
-      display: block;
-      width: 280px;
-      height: 280px;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url('/src/images/home-pic-320-2.png');
+      transform: translate(-50%, -138px);
+      width: 224px;
+      height: 224px;
+      background-image: url('/src/images/home-pic3-768.png');
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 1280px) {
         top: 0;
         left: 50%;
-        transform: translate(-50%, -138px);
-        width: 224px;
-        height: 224px;
-        background-image: url('/src/images/home-pic3-768.png');
+        transform: translate(-50%, -261px);
+        width: 394px;
+        height: 394px;
+        background-image: url('/src/images/home-pic3-1200-.png');
+      }
+    }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: url('/src/images/home-pic-320-2@2x.png');
+
+        @media screen and (min-width: 768px) {
+          background-image: url('/src/images/home-pic3-768@2x.png');
+        }
 
         @media screen and (min-width: 1280px) {
-          top: 0;
-          left: 50%;
-          transform: translate(-50%, -261px);
-          width: 394px;
-          height: 394px;
-          background-image: url('/src/images/home-pic3-1200-.png');
+          background-image: url('/src/images/home-pic3-1200-@2x.png');
         }
       }
     }
@@ -236,6 +285,7 @@
     background-image: url('/src/images/point.png');
   }
 }
+
 .cards__text {
   margin-bottom: 32px;
   font-family: 'DM Sans';
