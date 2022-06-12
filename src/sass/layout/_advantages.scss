@@ -22,7 +22,7 @@
     margin-bottom: 16px;
 
     content: '';
-    display: inline-block;
+    display: block;
     background-size: contain;
     width: 33px;
     height: 50px;
@@ -75,7 +75,7 @@
 }
 
 .advantages__label {
-  display: block;
+  display: inline-block;
 
   margin-bottom: 16px;
 
@@ -86,6 +86,13 @@
   text-transform: uppercase;
 
   color: var(--accent-color);
+
+  transition: transform 1200ms var(--transition-timing);
+
+  &:hover,
+  &:focus {
+    transform: rotate(-360deg);
+  }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
     font-size: 40px;
