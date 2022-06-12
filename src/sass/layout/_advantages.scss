@@ -91,7 +91,7 @@
 
   &:hover,
   &:focus {
-    transform: rotate(-360deg);
+    transform: scale(1.3) rotate(-360deg);
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
