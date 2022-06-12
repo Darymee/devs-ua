@@ -35,6 +35,14 @@
     float: left;
     border-radius: 16px;
     overflow: hidden;
+
+    &:hover,
+    &:focus {
+        position: absolute;
+        z-index: 99;
+        transform: scale(1.5);
+        transition: transform 250ms linear;
+  }
 }
 
  .grid-item--width2 { 
