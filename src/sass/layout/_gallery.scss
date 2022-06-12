@@ -1,0 +1,54 @@
+.section--gradient {
+    background: linear-gradient (0deg, var(--background-white-color) 60%, var(--background-light-pink-color) 0);
+}
+
+.gallery__grid {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+// .stamp1 {
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     width: 20%;
+//     height: 70px;
+//   }
+  .stamp2 {
+    // position: absolute;
+    // right: 0;
+    // bottom: 0;
+    width: 20%;
+    height: 20%;
+  }
+.grid-sizer {
+    width: 10%;
+}
+.gutter-size {
+    width: 20px;
+}
+
+.gallery__item { 
+    width: 15%;
+    padding: 5px;
+    margin-bottom: 6px;
+    float: left;
+    border-radius: 16px;
+    overflow: hidden;
+
+    &:hover,
+    &:focus {
+        position: absolute;
+        z-index: 99;
+        transform: scale(1.5);
+        transition: transform 250ms linear;
+  }
+}
+
+ .grid-item--width2 { 
+    width: 30%; 
+}
+
+.persent-size {
+    width: 15%;
+}
