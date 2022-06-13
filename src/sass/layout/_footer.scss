@@ -87,9 +87,13 @@
   fill: var(--svg-footer-fill);
   .footer-soc-link:focus & {
     fill: var(--accent-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing);
   }
   .footer-soc-link:hover & {
     fill: var(--accent-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing);
   }
 }
 
@@ -109,11 +113,19 @@
 
 .footer__tel {
   color: var(--accent-color);
+  transition: color var(--pink-color);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing);
+
   &:hover {
     color: var(--pink-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing);
   }
   &:focus {
     color: var(--pink-color);
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing);
   }
 }
 
