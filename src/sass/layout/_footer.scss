@@ -1,6 +1,16 @@
 .footer-section {
-  padding-top: 40px;
+  position: relative;
+  padding-top: 8px;
   padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 8px;
+    padding-top: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+    padding-bottom: 8px;
+  }
 }
 .section--pink {
   background-color: var(--background-light-pink-color);
@@ -13,7 +23,7 @@
   line-height: 1.17;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: var(--pink-color);
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
@@ -25,8 +35,6 @@
   }
 }
 .footer-box {
-  position: relative;
-
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -79,7 +87,7 @@
   transition-timing-function: var(--transition-timing);
 }
 .footer-soc-icon {
-  fill: var(--pink-color);
+  fill: var(--svg-footer-fill);
   .footer-soc-link:focus & {
     fill: var(--accent-color);
   }
@@ -92,7 +100,7 @@
   font-family: DM Sans;
   font-weight: bold;
   font-size: 12px;
-  color: #000000;
+  color: var(--black-text-color);
   text-align: right;
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -122,15 +130,16 @@
   }
 }
 
-.footer-box::after {
+.footer-section::after {
   content: '';
   position: absolute;
   width: 100%;
   height: 1px;
-  bottom: 16px;
-  background-color: #e1e1e1;
+  bottom: 80px;
+  background-color: var(--border-color);
+  display: block;
 
   @media screen and (min-width: 768px) {
-    bottom: 8px;
+    bottom: 40px;
   }
 }
