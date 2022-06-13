@@ -1,11 +1,11 @@
-.menu-mobile-open {
+.menu-open-btn {
   margin-left: auto;
   @media screen and (min-width: 1280px) {
     display: none;
   }
 }
 
-.menu-mobile-close {
+.menu-close-btn {
   position: absolute;
   top: 24px;
   right: 28px;
