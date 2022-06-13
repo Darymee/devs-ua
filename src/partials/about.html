@@ -1,34 +1,38 @@
 <section class="section section--pink">
   <div class="container">
-    <p class="label-title" id="how_it_made">tradition and love</p>
-    <h2 class="section__title section__title--about">how it’s made?</h2>
-    <div>
-      <picture>
-        <source
-          srcset="
-            ./images/home-pic4-1200.jpg     1x,
-            ./images/home-pic4-1200-@2x.jpg 2x
-          "
-          media="(min-width:1200px)"
-        />
+    <div class="about-title">
+      <p class="label-title" id="how_it_made">tradition and love</p>
+      <h2 class="section__title section__title--about">how it’s made?</h2>
+    </div>
+    <div class="article-about">
+      <div class="thumb-image-cow">
+        <picture>
+          <source
+            srcset="
+              ./images/home-pic4-1200.png     1x,
+              ./images/home-pic4-1200-@2x.png 2x
+            "
+            media="(min-width:1200px)"
+          />
 
-        <source
-          srcset="
-            ./images/home-pic4-768.jpg    1x,
-            ./images/home-pic4-768@2x.jpg 2x
-          "
-          media="(min-width:768px)"
-        />
+          <source
+            srcset="
+              ./images/home-pic4-768.png    1x,
+              ./images/home-pic4-768@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
 
-        <source
-          srcset="
-            ./images/home-pic4-320.jpg     1x,
-            ./images/home-pic4-320-@2x.jpg 2x
-          "
-          media="(min-width:320px)"
-        />
-        <img src="./images/home-pic4-320.jpg" alt="Cow photo" />
-      </picture>
+          <source
+            srcset="
+              ./images/home-pic4-320.png     1x,
+              ./images/home-pic4-320-@2x.png 2x
+            "
+            media="(min-width:320px)"
+          />
+          <img src="./images/home-pic4-320.png" alt="Cow photo" />
+        </picture>
+      </div>
       <div class="about-post">
         <p class="about-post__text">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
@@ -41,13 +45,18 @@
           suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
           tincidunt.
         </p>
+        <p
+          class="about-post__text about-post__text--gray about-post__text--no-mobile"
+        >
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button type="button" class="button--white button--about">
+          Read more
+          <svg class="icon-vector-1" width="7" height="10">
+            <use href="./images/sprite.svg#vector-1"></use>
+          </svg>
+        </button>
       </div>
-      <button type="button" class="button--white button--about">
-        Read more
-        <svg class="icon-vector-1" width="7" height="10">
-          <use href="./images/sprite.svg#vector-1"></use>
-        </svg>
-      </button>
     </div>
   </div>
 </section>
