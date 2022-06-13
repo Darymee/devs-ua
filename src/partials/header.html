@@ -1,45 +1,61 @@
-<!-- HEADER -->
-<header class="header">
-  <div class="container">
-    <div class="header__wrap">
+<!-- Section Header -->
+<section class="section-header">
+  <header class="header container">
+    <a class="header-logo" href="./index.html">
       <img
+        class="header-logo__img"
+        alt="icecream logo"
         src="images/logo.svg"
-        alt="Логотип"
         width="50"
-        class="header__logo__icon"
+        height="50"
       />
-      <span class="header__logo__text" id="home">Icecream</span>
-      <nav class="header__nav">
-        <ul class="header__nav__list">
-          <li class="header__nav__item"><a href="#home">Home</a></li>
-          <li class="header__nav__item"><a href="#about-us">About us</a></li>
-          <li class="header__nav__item">
-            <a href="#how_it_made">How it’s made?</a>
-          </li>
-          <li class="header__nav__item">
-            <a href="#our-products">Our products</a>
-          </li>
-          <li class="header__nav__item"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <button type="button" class="menu-toggle menu-mobile-open">
-        <svg height="12" width="20">
-          <use href="images/sprite.svg#Burger"></use>
-        </svg>
-      </button>
-
-      <button
-        type="button"
-        class="header__button-menu button--white"
-        data-modal-open
-      >
-        Buy now
-        <svg height="12" width="20">
-          <use href="images/arrow-right.svg"></use>
-        </svg>
-      </button>
-    </div>
-  </div>
-</header>
-<!-- HEADER END -->
+      ICECREAM
+    </a>
+    <nav class="header-nav">
+      <ul class="header-nav__list list">
+        <li class="header-nav__item header-nav__item--current">
+          <a class="header-nav__link" href="#Home">Home</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#About-us">About us</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link link" href="#how_it_made"
+            >How it’s made?</a
+          >
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link link" href="#Our-products">Our products</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="header-burger menu-toggle menu-mobile-open" type="button">
+      <!-- <img
+        class="header-burger__img"
+        alt="butt"
+        src="images/burger.svg"
+        width="20"
+        height="12"
+      /> -->
+      <svg class="header-burger__icon" height="12" width="20">
+        <use href="images/sprite.svg#Burger"></use>
+      </svg>
+    </button>
+    <button
+      class="button--white header-button header__button-menu"
+      type="button"
+    >
+      Buy now
+      <img
+        class="header-button__img"
+        alt=""
+        src="images/vector-1.svg"
+        width="4"
+        height="8"
+      />
+    </button>
+  </header>
+</section>
