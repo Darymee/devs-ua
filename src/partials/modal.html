@@ -1,0 +1,47 @@
+<div class="backdrop is-hidden data-modal">
+    <div class="modal">
+        <button class="modal-button-top data-modal-close">
+            <svg class="modal-button-icon" height="12" width="20">
+                <use href="images/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <form action="#" name="modal-form">
+
+            <label class="modal-label" for="modal-name">Name</label>
+            <div class="input-wrap">
+                <input type="text" name="name" id="modal-name" class="modal-input" required>
+                
+            </div>
+
+            <label class="modal-label" for="modal-tel">Phone</label>
+            <div class="input-wrap">
+                <input type="tel" name="phone" id="modal-tel" class="modal-input" required>
+                
+            </div>
+
+
+            <label class="modal-label" for="product">What do you like to order?</label>
+            <div class="input-wrap">
+                <select class="select-product" name="product" id="product" >
+                    <option value="icecream">Ice cream</option>
+                    <option value="icecoffee">Ice coffee</option>
+                    <option value="milkshake">Milkshake</option>
+                </select>
+            </div>
+            
+            <label class="modal-label" for="quantity">How many?</label>
+            <div class="input-wrap">
+                <input class="select-quantity" type="number" id="quantity" name="quantity" value="1" min="1">
+            </div>
+
+            
+
+            <label class="comment-wrap">
+                <span class="modal-label">Comment</span>
+                <textarea name="modal-comment" class="modal-comment" placeholder="Anything extra?"></textarea>
+            </label>
+
+            <button type="submit" class="modal-button">Submit</button>
+        </form>
+    </div>
+</div>
