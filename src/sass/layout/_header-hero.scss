@@ -1,9 +1,10 @@
+// HEADER
 .header__container {
   position: relative;
 }
 
 .header__wrap {
-  // position: absolute;
+  position: absolute;
   z-index: 5;
   top: 0;
   left: 0;
@@ -109,3 +110,4 @@
     margin-left: 30px;
   }
 }
+// END HEADER
