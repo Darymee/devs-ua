@@ -15,15 +15,17 @@
 
 .gallery__item { 
     width: 15%;
+    padding: 1px;
     margin-bottom: 6px;
     float: left;
-    border-radius: 16px;
+    border-radius: 10px;
     overflow: hidden;
     scale: 1;
     transition: transform 250ms linear;
 
     @media screen and (min-width: 480px) {
         padding: 3px;
+        border-radius: 18px;
       }
 
     &:hover,

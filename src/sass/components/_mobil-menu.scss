@@ -23,13 +23,13 @@
   padding-bottom: 60px;
   background-color: var(--background-menu-pink-color);
 
-  transform: translateX(100%);
+  transform: translateX(0);
 
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
-  transform: translateX(0%);
+  transform: translateX(100%);
 
   @media screen and (min-width: 480px) {
     width: 50vw;
