@@ -1,4 +1,4 @@
-.backdrop {
+.read-more-backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -8,27 +8,31 @@
 
     background-color: var(--backdrop-bg-color);
     z-index: 5;
+     opacity: 1;
     overflow: scroll;
 }
 
-.modal{
-    position: absolute;
+.read-more-modal {
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    padding: 40px;
+    padding: 40px 25px;
 
-    width:60vw;
-    
+    width:calc(100% - 40px);
+    max-height: 95vh;
 
     background-color:var(--background-light-pink-color);
     border-radius: 20px;
+    overflow: auto;
+
+    
 
     &__close-btn{
         position: absolute;
-        top: 10px;
-        right: 10px;
+        top: 15px;
+        right: 15px;
 
         display: flex;
         align-items: center;
@@ -56,14 +60,45 @@
         }
     }
 
+    
+
     &__text{
-        margin-bottom: 40px;
+        display: block;
+        margin-bottom: 35px;
+
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.76;
+        letter-spacing: .04em;
+        color: var(--grey-text-color);
     }
 
+        @media screen and (min-width:320px) {
+            max-width: 75vw;
+            padding: 15px 30px;
+            font-size: 12px;
+            
+        }
+        @media screen and (min-width:480px) {
+            font-size: 13px;
+        }  
+        @media screen and (min-width:768px) {
+            padding: 20px 40px;
+            font-size: 14px;
+            
+        }
+        @media screen and (min-width:1280px) {
+            padding: 40px 60px;
+            font-size: 16px; 
+        }
 }
 
 .is-hidden {
-  /* visibility: hidden; */
-  opacity: 0;
-  pointer-events: none;
+/* visibility: hidden; */
+    opacity: 0;
+    pointer-events: none;
+
 }
