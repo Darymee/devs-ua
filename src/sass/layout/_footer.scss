@@ -1,15 +1,12 @@
 .footer-section {
   position: relative;
-  padding-top: 8px;
   padding-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 8px;
-    padding-top: 0;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 60px;
-    padding-bottom: 8px;
   }
 }
 .section--pink {
@@ -112,6 +109,12 @@
 
 .footer__tel {
   color: var(--accent-color);
+  &:hover {
+    color: var(--pink-color);
+  }
+  &:focus {
+    color: var(--pink-color);
+  }
 }
 
 .rights {
