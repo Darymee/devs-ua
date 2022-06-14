@@ -334,6 +334,7 @@
   }
 }
 
+// -------------added inputs for cards----------------------------
 .icon {
   display: flex;
   justify-content: center;
@@ -365,23 +366,28 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+
+  &:hover .label__icon {
+    background-color: var(--button-white-hover);
+    transform: rotate(-90deg) scale(1.3);
+  }
 }
 .label__icon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   padding: 12.5px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   transition: transform var(--transition-duration) var(--transition-timing);
 }
 .details1 {
-  background-color: rgb(236, 75, 166);
+  background-color: rgb(233, 113, 169);
 }
 .details2 {
-  background-color: rgb(209, 151, 84);
+  background-color: rgb(213, 162, 103);
 }
 .details3 {
-  background-color: rgb(21, 150, 60);
+  background-color: rgb(137, 196, 74);
 }
 
 .details1,
@@ -391,11 +397,12 @@
   top: 50%;
   left: -100%;
   opacity: 0;
-  // background-color: #f9fd80;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 15px;
+
+  padding: 24px;
   border-radius: 20px;
 
   width: 100%;
@@ -403,10 +410,12 @@
 
   @media screen and (min-width: 768px) {
     height: 25%;
+    padding: 30px;
   }
 
   @media screen and (min-width: 1280px) {
     height: 30%;
+    padding: 60px;
   }
 }
 .input__btn1:checked ~ .details1,
@@ -414,9 +423,8 @@
 .input__btn3:checked ~ .details3 {
   position: absolute;
 
-  // background-color: #f9fd80;
-  opacity: 1;
-  transition: 1s;
+  opacity: 0.85;
+  transition: 1s linear;
   height: 50%;
   left: 0;
   top: 30%;
@@ -435,6 +443,8 @@
 .input__btn2:not(:checked) ~ .details2,
 .input__btn3:not(:checked) ~ .details3 {
   transition: 1s;
+  top: 30%;
+  left: 0;
 }
 
 .info__item {
@@ -444,17 +454,25 @@
 }
 
 .info__text {
-  font-family: 'DM Sans';
+  font-family: 'Titan One';
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 24px;
   line-height: 1.5;
 
-  color: var(--white-color);
+  color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
 
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
+    font-size: 28px;
   }
 }
 
+.info__links:hover .info__text,
+.info__links:focus .info__text {
+  color: rgb(19, 155, 240);
+}
 // -------(Ihor Komar finished code)-------------------------------------------------
