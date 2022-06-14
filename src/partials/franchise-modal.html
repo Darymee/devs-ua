@@ -1,0 +1,87 @@
+<div class="franchise-modal-backdrop is-hidden" data-franchise-modal>
+    <div class="franchise-modal">
+         <button type="button" class="franchise-modal__close-btn" data-franchise-modal-close>
+                    <svg class="franchise-modal__icon-close" width="20" height="20">
+                        <use href="images/sprite.svg#icon-close-btn"></use>
+                    </svg>
+         </button>
+         <h2 class="franchise-modal__title">Want a profitable business? Send contacts</h2>
+                <form class="franchise-modal-form">
+                   <div class="franchise-modal-form__field">
+                        <label for="user-name" class="franchise-modal-form__label">Name</label>
+                        <div class="franchise-modal-form__wrap">
+                            <input 
+                                type="text" 
+                                class="franchise-modal-form__input" 
+                                name="user-name" 
+                                id="user-name"
+                            >
+                            <svg class="franchise-modal-form__input-icon" width="18px" height="18px">
+                                <use href="images/sprite.svg#icon-person-black"></use>
+                            </svg>
+                        </div>
+                        
+                    </div>
+                    <div class="franchise-modal-form__field">
+                        <label for="tel" class="franchise-modal-form__label">Phone number</label>
+                            <div class="franchise-modal-form__wrap">
+                            <input 
+                            type="tel" 
+                            class="franchise-modal-form__input" 
+                            name="mobile-tel"  
+                            id="tel"
+                            >
+                            <svg class="franchise-modal-form__input-icon" width="18" height="18">
+                                <use href="images/sprite.svg#icon-phone-black"></use>
+                            </svg>
+                            </div>
+                    </div>
+                    <div class="franchise-modal-form__field">
+                        <label for="email" class="franchise-modal-form__label">Email</label>
+                        <div class="franchise-modal-form__wrap">
+                            <input 
+                            type="email" 
+                            class="franchise-modal-form__input" 
+                            name="email" 
+                            id="email">
+                            <svg class="franchise-modal-form__input-icon" width="18" height="18">
+                                <use href="images/sprite.svg#icon-email-black"></use>
+                            </svg>
+                        </div>
+                    </div>
+                        <div class="franchise-modal-form__field">
+                        <label for="feedback" class="franchise-modal-form__label">Comments</label>
+                        <textarea 
+
+                        class="franchise-modal-form__input franchise-modal-form__textarea" 
+                        name="feedback" 
+                        placeholder="Введите текст" 
+                        id="feedback"
+                        rows="5" 
+                        ></textarea>
+                    </div>
+                        
+                    <div class="franchise-modal-form__field">
+                        <label class="franchise-modal-form__label--check-text">
+                        <input 
+                        type="checkbox"
+                        class="franchise-modal-form__input-check visually-hidden"
+                        name="policy"
+                        value="policy"
+                        id="input-check"
+                        >
+                        <span class="franchise-modal-form__icon-check-wrap">
+                            <svg width="15px" height="15px" class="icon-check">
+                                <use href="images/sprite.svg#icon-check" ></use>
+                            </svg>
+                        </span>
+                        I agree with the terms and conditions
+                        <a href="#" class="franchise-modal-form__confirmation-link">Terms of an agreement</a>
+                        </label>
+                    </div>
+                        
+                        <button type="submit" class="button--pink franchise-modal-form__btn">Send</button>
+                </form>
+         
+    </div>
+</div>

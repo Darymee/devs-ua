@@ -45,8 +45,8 @@
         align-items: center;
         justify-content: center;
         
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.1);
         background: none;
@@ -54,15 +54,17 @@
         transition-property: fill, border-color, transform;
         transition-duration: var(--transition-duration);
         transition-timing-function: var(--transition-timing);
+        
         fill: var(--pink-color);
-        border-color:var(--pink-color);
+        border-color:var(--button-accent);
+        background-color:var(--button-white-hover);
         
         &:hover{
             cursor: pointer;
-
+            
             fill: var(--button-accent);
-            border-color:var(--button-accent);
-            transform: scale(1.15);
+            
+            transform: scale(1.2);
     
         }
     }
