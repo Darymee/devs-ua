@@ -445,6 +445,10 @@
   transition: 1s;
   top: 30%;
   left: 0;
+
+  & .info__links {
+    display: none;
+  }
 }
 
 .info__item {
@@ -475,4 +479,5 @@
 .info__links:focus .info__text {
   color: rgb(19, 155, 240);
 }
+
 // -------(Ihor Komar finished code)-------------------------------------------------
