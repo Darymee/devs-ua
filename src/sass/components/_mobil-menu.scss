@@ -102,6 +102,7 @@
 .mobile__menu__list {
   color: var(--white-color);
   transition: color 300ms linear;
+  padding: 12px;
   &:hover,
   &:focus {
     color: var(--button-accent);
