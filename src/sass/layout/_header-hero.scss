@@ -38,8 +38,7 @@
   &:hover,
   &:focus {
     transform: scale(1.1);
-
-}
+  }
 }
 
 .header__logo__icon {
@@ -231,6 +230,7 @@
 }
 
 .hero__title--white {
+  display: inline-block;
   font-size: 26px;
   line-height: 1.15;
   color: var(--white-color);
@@ -419,6 +419,11 @@
     margin-bottom: 108px;
   }
 }
+.hero__item {
+  &:first-child {
+    margin-right: 8px;
+  }
+}
 
 .hero__link {
   border-radius: 20px;
@@ -434,7 +439,7 @@
   font-style: normal;
   font-weight: 400;
   cursor: pointer;
-  transition-property: color;
+  transition-property: background-color;
   transition-duration: var(--transittion-duration);
   transition-timing-function: var(--transittion-timing);
   @media screen and (min-width: 1280px) {
@@ -446,9 +451,6 @@
   &:hover,
   &:focus {
     background-color: var(--button-white-hover);
-  }
-  &:first-child {
-    margin-right: 8px;
   }
 }
 
