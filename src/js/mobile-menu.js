@@ -12,3 +12,15 @@
         refs.body.classList.toggle("no-scroll");
     }
 })();
+
+// Открывание модалки моб меню
+(() => {
+    const refs = {
+        openModalBtn: document.querySelector("[menu-mobile-modal-open]"),
+        modal: document.querySelector("[data-mobile-menu]"),
+    };
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    function toggleModal() {
+        refs.modal.classList.toggle("is-hidden");
+    }
+})();
