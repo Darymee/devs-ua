@@ -1,6 +1,6 @@
 // SECTION GALLERY
 .section--gradient {
-    background: linear-gradient (0deg, var(--background-white-color) 60%, var(--background-light-pink-color) 0);
+    background: linear-gradient(to top, var(--background-white-color) 60%, var(--background-light-pink-color) 0);
 }
 
 .gallery__masonry {
@@ -14,10 +14,12 @@
 }
 
 .gallery__item { 
+    z-index: 0;
     width: 15%;
     padding: 1px;
     margin-bottom: 6px;
     float: left;
+    box-sizing: border-box;
     border-radius: 10px;
     overflow: hidden;
     scale: 1;
@@ -25,7 +27,7 @@
 
     @media screen and (min-width: 480px) {
         padding: 3px;
-        border-radius: 18px;
+        border-radius: 32px;
       }
 
     &:hover,
