@@ -1,5 +1,5 @@
-//-------------- section PRODUCTS
-// ---------------------(Ihor Komar added this code)-----------------------------
+// ------section products------------
+// --------Ihor added code-------------
 .label-title {
   margin-bottom: 15px;
 
@@ -39,6 +39,19 @@
   }
 }
 
+.box {
+  width: 200px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 160px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 241px;
+  }
+}
+
 .cards {
   padding: 0;
 
@@ -63,7 +76,7 @@
   margin: 0 auto;
 
   @media screen and (max-width: 767.98px) {
-    padding: 160px 35px 40px;
+    padding: 160px 40px 40px;
     margin: 0 auto;
     max-width: 320px;
     &:not(:last-child) {
@@ -75,14 +88,14 @@
     margin: 8px;
     flex-basis: calc((100% - 48px) / 3);
 
-    padding: 118px 25px 40px;
+    padding: 118px 32px 40px;
   }
 
   @media screen and (min-width: 1280px) {
     margin: 16px;
     flex-basis: calc((100% - 96px) / 3);
 
-    padding: 165px 60px 60px;
+    padding: 165px 76px 60px;
   }
 
   &:first-child {
@@ -268,11 +281,11 @@
     left: 50%;
     transform: translate(-50%, 32px);
     display: block;
-    width: 29px;
+    width: 26px;
     height: 6px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../images/point.png');
+    background-image: url('../images/point-white.svg');
   }
 }
 
@@ -306,7 +319,6 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
-  /* or 21px */
 
   text-align: center;
   letter-spacing: 0.04em;
@@ -322,14 +334,21 @@
   }
 }
 
-.cards__btn {
-  display: block;
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.input__btn1,
+.input__btn2,
+.input__btn3 {
+  display: none;
   margin: 0 auto;
+  padding: 0;
 
   border: none;
   border-radius: 50%;
-  background-color: transparent;
-  cursor: pointer;
+  background: transparent;
 
   @media screen and (min-width: 1280px) {
     bottom: 60px;
@@ -337,12 +356,105 @@
 }
 
 .cards__btn-icon {
+  width: 15px;
+  height: 15px;
+}
+.label__btn1,
+.label__btn2,
+.label__btn3 {
   width: 40px;
   height: 40px;
+  cursor: pointer;
+}
+.label__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 12.5px;
+  background-color: #ffffff;
+  transition: transform var(--transition-duration) var(--transition-timing);
+}
+.details1 {
+  background-color: rgb(236, 75, 166);
+}
+.details2 {
+  background-color: rgb(209, 151, 84);
+}
+.details3 {
+  background-color: rgb(21, 150, 60);
 }
 
-.cards__icon {
-  width: 40px;
-  height: 40px;
+.details1,
+.details2,
+.details3 {
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  opacity: 0;
+  // background-color: #f9fd80;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 20px;
+
+  width: 100%;
+  height: 30%;
+
+  @media screen and (min-width: 768px) {
+    height: 25%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 30%;
+  }
 }
+.input__btn1:checked ~ .details1,
+.input__btn2:checked ~ .details2,
+.input__btn3:checked ~ .details3 {
+  position: absolute;
+
+  // background-color: #f9fd80;
+  opacity: 1;
+  transition: 1s;
+  height: 50%;
+  left: 0;
+  top: 30%;
+  @media screen and (min-width: 768px) {
+    height: 50%;
+    top: 25%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 50%;
+    top: 30%;
+  }
+}
+
+.input__btn1:not(:checked) ~ .details1,
+.input__btn2:not(:checked) ~ .details2,
+.input__btn3:not(:checked) ~ .details3 {
+  transition: 1s;
+}
+
+.info__item {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.info__text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: var(--white-color);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
 // -------(Ihor Komar finished code)-------------------------------------------------

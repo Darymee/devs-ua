@@ -9,9 +9,7 @@
     padding-top: 60px;
   }
 }
-.section--pink {
-  background-color: var(--background-light-pink-color);
-}
+
 .footer-title {
   font-family: 'Titan One';
   font-style: normal;
@@ -31,21 +29,49 @@
     line-height: 1.13;
   }
 }
+.footer-title__red {
+  display: block;
+  margin-top: 16px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+}
+
 .footer-box {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 68px;
   }
 }
 .footer-box__title {
   width: 234px;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     width: 340px;
-    padding-bottom: 0px;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1280px) {
     width: 477px;
@@ -53,13 +79,14 @@
 }
 
 .footer-contact {
-  padding-bottom: 56px;
+  margin-bottom: 56px;
+
   @media screen and (min-width: 768px) {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
 }
 .footer-soc-list {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: flex-end;
 }
@@ -79,16 +106,14 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
+  fill: var(--svg-footer-fill);
   transition-property: fill;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing);
-}
-.footer-soc-icon {
-  fill: var(--svg-footer-fill);
-  .footer-soc-link:focus & {
+  &:hover {
     fill: var(--accent-color);
   }
-  .footer-soc-link:hover & {
+  &:focus {
     fill: var(--accent-color);
   }
 }
@@ -109,6 +134,10 @@
 
 .footer__tel {
   color: var(--accent-color);
+  transition: color var(--pink-color);
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing);
+
   &:hover {
     color: var(--pink-color);
   }
@@ -124,7 +153,7 @@
   font-family: DM Sans;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.86;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--grey-text-color);
 
@@ -138,11 +167,11 @@
   position: absolute;
   width: 100%;
   height: 1px;
-  bottom: 80px;
+  bottom: 78px;
   background-color: var(--border-color);
   display: block;
 
   @media screen and (min-width: 768px) {
-    bottom: 40px;
+    bottom: 42px;
   }
 }

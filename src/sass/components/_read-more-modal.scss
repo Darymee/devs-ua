@@ -8,15 +8,20 @@
 
     background-color: var(--backdrop-bg-color);
     z-index: 5;
-     opacity: 1;
+    opacity: 1;
+    visibility: visible;
     overflow: scroll;
+
+    transition-property: opacity,visibility;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing);
 }
 
 .read-more-modal {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
 
     padding: 40px 25px;
 
@@ -27,77 +32,112 @@
     border-radius: 20px;
     overflow: auto;
 
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
+
+    transition-property: transform;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing);
     
 
-    &__close-btn{
-        position: absolute;
-        top: 15px;
-        right: 15px;
+        &__close-btn{
+            position: absolute;
+            top: 15px;
+            right: 15px;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background: none;
-
-        transition-property: fill, border-color, transform;
-        transition-duration: var(--transition-duration);
-        transition-timing-function: var(--transition-timing);
-        fill: var(--pink-color);
-        border-color:var(--pink-color);
-        
-        &:hover{
-            cursor: pointer;
-
-            fill: var(--button-accent);
-            border-color:var(--button-accent);
-            transform: scale(1.15);
-    
-        }
-    }
-
-    
-
-    &__text{
-        display: block;
-        margin-bottom: 35px;
-
-        font-family: 'DM Sans';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.76;
-        letter-spacing: .04em;
-        color: var(--grey-text-color);
-    }
-
-        @media screen and (min-width:320px) {
-            max-width: 75vw;
-            padding: 15px 30px;
-            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: none;
+
+            transition-property: fill, border-color, transform;
+            transition-duration: var(--transition-duration);
+            transition-timing-function: var(--transition-timing);
+            fill: var(--pink-color);
+            border-color:var(--pink-color);
+
+            &:hover, &:focus{
+                cursor: pointer;
+
+                fill: var(--button-accent);
+                border-color:var(--button-accent);
+                transform: scale(1.15);
+        
+            }
+
+            @media screen and (max-width:480px) {
+                top: 10px;
+                right: 10px;
+
+                width: 20px;
+                height: 20px;
+
+            }
+
+        
         }
-        @media screen and (min-width:480px) {
-            font-size: 13px;
-        }  
-        @media screen and (min-width:768px) {
-            padding: 20px 40px;
+        &__icon-close{
+            @media screen and (max-width:480px) {
+                transform: scale(2);
+            }
+        }
+
+        &__text{
+            display: block;
+            margin-bottom: 35px;
+
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 500;
             font-size: 14px;
-            
+            font-weight: 500;
+            line-height: 1.76;
+            letter-spacing: .04em;
+            color: var(--grey-text-color);
         }
-        @media screen and (min-width:1280px) {
-            padding: 40px 60px;
-            font-size: 16px; 
-        }
+
+    @media screen and (max-width:480px) {
+        width: 300px;
+        padding: 15px 15px;
+        font-size: 12px;
+
+        .section__title--about-modal{
+            font-size: 25px;
+            padding: 0;
+            margin-bottom: 20px;
+        }   
+    }
+
+    @media screen and (min-width:480px) {
+        max-width: 450px;
+        font-size: 13px;
+
+        .section__title--about-modal{
+            font-size: 34px;
+            padding: 0;
+            margin-bottom: 30px;
+        }   
+    }  
+    @media screen and (min-width:768px) {
+        max-width: 738px;
+        padding: 20px 40px;
+        font-size: 14px;
+        
+    }
+    @media screen and (min-width:1280px) {
+        max-width: 1280px;
+        padding: 40px 60px;
+        font-size: 16px; 
+    }
+    
 }
 
 .is-hidden {
-/* visibility: hidden; */
+    visibility: hidden;
     opacity: 0;
     pointer-events: none;
 

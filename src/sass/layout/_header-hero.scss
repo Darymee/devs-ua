@@ -32,6 +32,14 @@
 .header__logo {
   display: flex;
   align-items: center;
+  margin-right: auto;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+
+}
 }
 
 .header__logo__icon {
@@ -70,7 +78,7 @@
   padding-bottom: 20px;
   color: var(--button-white);
 
-  transition: color 300ms linear;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--button-accent);
@@ -85,8 +93,15 @@
   margin-left: auto;
   background-color: transparent;
   border: none;
+  padding: 0;
+  transition-duration: var(--transition-duration);
+
   @media screen and (min-width: 1279px) {
     display: none;
+  }
+
+  &:hover {
+    transform: scale(1.15);
   }
 }
 
@@ -102,12 +117,12 @@
   font-weight: 700;
   line-height: 1.31;
 
-  @media screen and (max-width: 549px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 550px) and (max-width: 767px) {
-    margin-left: 20px;
-  }
+  // @media screen and (min-width: 550px) and (max-width: 767px) {
+  //   margin-left: 20px;
+  // }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-left: 30px;
   }
@@ -121,7 +136,6 @@
   background-color: var(--background-pink-color);
 }
 .hero {
-  outline: 2px red dotted;
   position: relative;
   padding: 52px 16px;
   font-family: 'Titan One';
@@ -184,7 +198,22 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--accent-color);
-
+  @media screen and (max-width: 767px) {
+    animation: heartbeat;
+    animation-iteration-count: 3;
+    animation-duration: 2000ms;
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      20% {
+        transform: scale(1.2) translateX(5%) translateY(5%);
+      }
+      40% {
+        transform: scale(1.4) translateX(9%) translateY(10%);
+      }
+    }
+  }
   @media screen and (min-width: 768px) {
     width: 162px;
     font-size: 34px;
@@ -319,6 +348,12 @@
 }
 
 .hero__image-icecream {
+  transition-property: transform;
+  transition-duration: 1500ms;
+  transition-timing-function: var(--transittion-timing);
+  &:hover {
+    transform: scale(1.2);
+  }
   @media screen and (max-width: 767px) {
     position: absolute;
     z-index: 1;
@@ -330,12 +365,6 @@
     z-index: 2;
     top: 80px;
     left: 322px;
-    transition-property: transform;
-    transition-duration: 1500ms;
-    transition-timing-function: var(--transittion-timing);
-    &:hover {
-      transform: scale(1.2);
-    }
   }
   @media screen and (min-width: 1280px) {
     position: absolute;
