@@ -23,7 +23,7 @@
     border-radius: 10px;
     overflow: hidden;
     scale: 1;
-    transition: transform 250ms linear;
+    transition: transform var(--transition-duration) var(--transition-timing);
 
     @media screen and (min-width: 480px) {
         padding: 3px;
