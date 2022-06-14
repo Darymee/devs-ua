@@ -9,6 +9,13 @@
   }
 }
 
+.container__contacts {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 768px;
+    padding: 0 16px;
+  }
+}
+
 // ----------------Contacts cards------------------
 
 .contacts__card-list {
@@ -24,8 +31,7 @@
   border-radius: 30px;
   background-color: var(--white-color);
 
-  transition: box-shadow transform var(--transition-duration)
-    var(--transition-timing);
+  transition: transform var(--transition-duration) var(--transition-timing);
 
   &:hover,
   &:focus {
@@ -58,8 +64,8 @@
 .contacts__top-text {
   display: inline-block;
   min-height: 16px;
-  padding-left: 19px;
-  padding-right: 19px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 6px;
