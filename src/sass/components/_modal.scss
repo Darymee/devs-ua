@@ -51,7 +51,7 @@
 
 .modal-button-top,
 .modal-button {
-    background-color: var(--button-accent);
+    background-color: var(--white-color);
     width: 90px;
     height: 35px;
     border-radius: 22px;
@@ -65,13 +65,46 @@
     border-radius: 50%;
     margin-left: auto;
     display: block;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: none;
+
+    transition-property: fill, border-color, transform;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing);
+    fill: var(--white-color);
+    border-color:var(--white-color);
+    
+    &:hover{
+        cursor: pointer;
+
+        fill: var(--button-white-hover);
+        border-color:var(--button-white-hover);
+        transform: scale(1.15);
+
+    }
 }
 
 .modal-button {
-    color: var(--button-white);
+    color: var(--pink-color);
     margin-left: auto;
     margin-right: auto;
     display: block;
+    transition-property: fill, border-color, transform;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing);
+    
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.15);
+    }
 }
 
 .modal-button-icon {

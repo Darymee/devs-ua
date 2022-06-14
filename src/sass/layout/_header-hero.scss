@@ -85,9 +85,16 @@
   margin-left: auto;
   background-color: transparent;
   border: none;
+  padding: 0;
+  transition-duration: var(--transition-duration);
+
   @media screen and (min-width: 1279px) {
     display: none;
   }
+
+  &:hover{
+    transform: scale(1.15);
+}
 }
 
 .header__button-menu {
