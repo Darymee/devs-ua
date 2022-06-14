@@ -3,11 +3,9 @@
     var(--white-color) 25%,
     var(--background-light-pink-color) 75%
   );
-}
-
-.container__contacts {
-  @media screen and (min-width: 768px) {
-    padding: 0 18px;
+  @media screen and (max-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 48px;
   }
 }
 
@@ -24,14 +22,16 @@
 
 .contacts__card {
   padding: 40px 32px;
-  border: 1px solid #e1e1e1;
+  border: 1px solid var(--border-color);
   border-radius: 30px;
 
   background-color: var(--white-color);
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
 
   &:not(:first-child) {
-    margin-top: 20px;
+    @media screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -40,12 +40,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    min-width: 224px;
+    max-width: 224px;
     margin: 16px;
     flex-basis: calc((100% - 96px) / 3);
   }
   @media screen and (min-width: 1280px) {
-    min-width: 395px;
+    max-width: 395px;
+    padding: 40px 40px;
   }
 }
 
@@ -58,8 +59,9 @@
 
   font-style: 500;
   font-size: 12px;
-  line-height: 1.86;
+  line-height: 1.83;
   text-transform: uppercase;
+  letter-spacing: 0.04em;
 
   color: var(--white-color);
 
@@ -71,19 +73,69 @@
     background-color: var(--card-text-green-bgc);
   }
 
-  &--pink {
-    background-color: var(--card-text-pink-bgc);
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.88;
+    margin-bottom: 32px;
   }
 }
 
-.contacts__title,
-.contacts__work-time-text,
-.contacts__work-time-hours {
+.contacts__title {
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 12px;
-  letter-spacing: 1.86;
+  line-height: 1.83;
   color: var(--black-text-color);
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
+}
+
+.contacts__work-time-list {
+  padding-inline-start: 0px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  @media screen and (min-width: 1280px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.contacts__work-time-item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 12px;
+    }
+  }
+}
+.contacts__work-time-text,
+.contacts__work-time-hours {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: var(--black-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }
 
 .contacts__work-time-hours {
@@ -95,18 +147,39 @@
 .contacts__link--tel {
   font-weight: 500;
   font-size: 12px;
-  letter-spacing: 1.15;
+  line-height: 1.5;
   color: var(--grey-text-color);
 }
 
-.contacts__work-time-list {
-  padding-inline-start: 0px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
+.contacts__bottom-text {
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.64;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.81;
+    letter-spacing: 0.04em;
+  }
+}
+
+.contacts__link--email,
+.contacts__link--tel {
+  transition: color var(--transition-duration) var(--transition-timing);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.81;
+    }
+  }
 }
 
 .contacts__phone-mail-list,
@@ -114,11 +187,17 @@
   padding-inline-start: 0px;
 }
 
+// -------------------Contacts buttons----------------------
+
 .contacts__button-list {
   margin-top: 32px;
   @media screen and (min-width: 768px) {
+    margin-top: 40px;
     display: flex;
     justify-content: center;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 60px;
   }
 }
 
@@ -132,8 +211,6 @@
     }
   }
 }
-
-// -------------------Contacts buttons----------------------
 
 .contacts__button {
   display: block;
