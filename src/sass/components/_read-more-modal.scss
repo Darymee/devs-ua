@@ -58,13 +58,12 @@
             transition-duration: var(--transition-duration);
             transition-timing-function: var(--transition-timing);
             fill: var(--pink-color);
-            border-color:var(--pink-color);
+            border-color:var(--button-accent);
 
             &:hover, &:focus{
                 cursor: pointer;
 
                 fill: var(--button-accent);
-                border-color:var(--button-accent);
                 transform: scale(1.15);
         
             }
