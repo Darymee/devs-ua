@@ -144,6 +144,7 @@
   }
 }
 .about-background {
+  z-index: 5;
   width: 70px;
   @media screen and (min-width: 1280px) {
     width: 280px;
