@@ -35,9 +35,11 @@
   margin-right: auto;
   cursor: pointer;
 
+  transition: transform 1000ms var(--transition-timing);
+  
   &:hover,
   &:focus {
-    transform: scale(1.1);
+    transform: scale(1.5);
   }
 }
 
