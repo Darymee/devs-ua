@@ -2,11 +2,17 @@
   <div class="about-image">
     <picture class="about-background">
       <source
-        srcset="/src/images/leftsplash-320.png"
+        srcset="
+          /src/images/leftsplash-320.png     1x,
+          /src/images/leftsplash-320-@2x.png 2x
+        "
         media="(max-width: 767px)"
       />
       <source
-        srcset="/src/images/leftsplash-1200.png"
+        srcset="
+          /src/images/leftsplash-1200.png     1x,
+          /src/images/leftsplash-1200-@2x.png 2x
+        "
         media="(min-width: 1280px)"
       />
       <img
@@ -16,11 +22,17 @@
     </picture>
     <picture class="about-background">
       <source
-        srcset="/src/images/rightsplash-320.png"
+        srcset="
+          /src/images/rightsplash-320.png     1x,
+          /src/images/rightsplash-320-@2x.png 2x
+        "
         media="(max-width: 767px)"
       />
       <source
-        srcset="/src/images/rightsplash-1200.png"
+        srcset="
+          /src/images/rightsplash-1200.png     1x,
+          /src/images/rightsplash-1200-@2x.png 2x
+        "
         media="(min-width: 1280px)"
       />
       <img
@@ -39,28 +51,25 @@
         <picture>
           <source
             srcset="
-              ./images/home-pic4-1200.png     1x,
-              ./images/home-pic4-1200-@2x.png 2x
+              images/home-pic4-1200.png     1x,
+              images/home-pic4-1200-@2x.png 2x
             "
             media="(min-width:1280px)"
           />
 
           <source
-            srcset="
-              ./images/home-pic4-768.png    1x,
-              ./images/home-pic4-768@2x.png 2x
-            "
+            srcset="images/home-pic4-768.png 1x, images/home-pic4-768@2x.png 2x"
             media="(min-width:768px)"
           />
 
           <source
             srcset="
-              ./images/home-pic4-320.png     1x,
-              ./images/home-pic4-320-@2x.png 2x
+              images/home-pic4-320.png     1x,
+              images/home-pic4-320-@2x.png 2x
             "
             media="(min-width:320px)"
           />
-          <img src="./images/home-pic4-320.png" alt="Cow photo" />
+          <img src="images/home-pic4-320.png" alt="Cow photo" />
         </picture>
       </div>
       <div class="about-post">
