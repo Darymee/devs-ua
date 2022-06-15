@@ -1,5 +1,5 @@
 // ------section products------------
-// --------Ihor added code-------------
+// Ihor added code
 .label-title {
   margin-bottom: 15px;
 
@@ -334,12 +334,6 @@
   }
 }
 
-// -------------added inputs for cards----------------------------
-.icon {
-  display: flex;
-  justify-content: center;
-}
-
 .input__btn1,
 .input__btn2,
 .input__btn3 {
@@ -372,7 +366,12 @@
     transform: rotate(-90deg) scale(1.3);
   }
 }
+
 .label__icon {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -380,12 +379,15 @@
   background-color: var(--white-color);
   transition: transform var(--transition-duration) var(--transition-timing);
 }
+
 .details1 {
   background-color: rgb(233, 113, 169);
 }
+
 .details2 {
   background-color: rgb(213, 162, 103);
 }
+
 .details3 {
   background-color: rgb(137, 196, 74);
 }
@@ -418,6 +420,7 @@
     padding: 60px;
   }
 }
+
 .input__btn1:checked ~ .details1,
 .input__btn2:checked ~ .details2,
 .input__btn3:checked ~ .details3 {
@@ -480,4 +483,4 @@
   color: rgb(19, 155, 240);
 }
 
-// -------(Ihor Komar finished code)-------------------------------------------------
+// (Ihor Komar finished code)
