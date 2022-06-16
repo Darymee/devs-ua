@@ -1,8 +1,8 @@
 .button-anchor {
   position: fixed;
   z-index: 5;
-  bottom: 5%;
-  right: 3%;
+  bottom: 9%;
+  right: 8%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -18,6 +18,11 @@
     transform var(--transition-duration) var(--transition-timing),
     box-shadow var(--transition-duration) var(--transition-timing),
     opasity var(--transition-duration) var(--transition-timing);
+
+  @media screen and (min-width: 768px) {
+    bottom: 5%;
+    right: 3%;
+  }
 
   &:hover,
   &:focus {
