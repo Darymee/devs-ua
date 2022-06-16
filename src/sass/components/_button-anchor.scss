@@ -1,0 +1,33 @@
+.button-anchor {
+  position: fixed;
+  z-index: 5;
+  bottom: 5%;
+  right: 3%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+
+  background-color: transparent;
+  border: 3px solid rgba(255, 165, 186, 0.666);
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: border var(--transition-duration) var(--transition-timing),
+    transform var(--transition-duration) var(--transition-timing),
+    box-shadow var(--transition-duration) var(--transition-timing),
+    opasity var(--transition-duration) var(--transition-timing);
+
+  &:hover,
+  &:focus {
+    border: 3px solid rgba(212, 20, 68, 0.449);
+    opacity: 1;
+    box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+    transform: scale(1.1);
+  }
+}
+
+.button-anchor__icon {
+  transform: rotate(-90deg);
+}
