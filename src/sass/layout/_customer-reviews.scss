@@ -12,7 +12,6 @@
 
   @media screen and (min-width: 480px) {
     width: 480px;
-
   }
 
   @media screen and (min-width: 768px) {
@@ -30,6 +29,8 @@
   margin: 0 auto;
   margin-bottom: 32px;
   width: 85px;
+  border-radius: 50%;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
@@ -59,11 +60,13 @@
 }
 
 .reviews__gradient {
-  background-image: repeating-linear-gradient(to bottom,
-      #fafafa,
-      #fafafa 30px,
-      #e1e1e1 30px,
-      #e1e1e1 31px);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #fafafa,
+    #fafafa 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
 }
 
 .reviews__gradient::before {
@@ -209,4 +212,12 @@
 
 .slick-dots li button:before {
   font-size: 10px;
+}
+.slick-prev {
+  left: -30px;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: pink;
+  font-size: 30px;
 }
