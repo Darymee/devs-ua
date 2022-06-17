@@ -7,22 +7,21 @@
 }
 
 .reviews {
-  // padding: 0 20px;
+  padding: 0 20px;
   margin: 0 auto;
 
   @media screen and (min-width: 480px) {
     width: 480px;
-
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    // padding: 0 74px;
+    padding: 0 74px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 1280px;
-    // padding: 0 123px;
+    padding: 0 123px;
   }
 }
 
@@ -30,6 +29,8 @@
   margin: 0 auto;
   margin-bottom: 32px;
   width: 85px;
+  border-radius: 50%;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
@@ -59,11 +60,13 @@
 }
 
 .reviews__gradient {
-  background-image: repeating-linear-gradient(to bottom,
-      #fafafa,
-      #fafafa 30px,
-      #e1e1e1 30px,
-      #e1e1e1 31px);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #fafafa,
+    #fafafa 30px,
+    #e1e1e1 30px,
+    #e1e1e1 31px
+  );
 }
 
 .reviews__gradient::before {
@@ -108,20 +111,6 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-
-  // @media screen and (min-width: 480px) {
-  //   margin: 0;
-  //   bottom: -20px;
-  //   left: 204px;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   bottom: -8px;
-  //   left: 294px;
-  // }
-  // @media screen and (min-width: 1280px) {
-  //   bottom: -20px;
-  //   left: 501px;
-  // }
 }
 
 .reviews__text {
@@ -195,6 +184,12 @@
     background-image: url('../images/home.svg');
   }
 }
+.slick-dots {
+  bottom: -50px;
+}
+.slick-dots li {
+  margin: 0 4px;
+}
 
 .slick-dots li.slick-active button:before {
   color: var(--accent-color);
@@ -209,4 +204,34 @@
 
 .slick-dots li button:before {
   font-size: 10px;
+}
+.slick-prev {
+  left: 0;
+  z-index: 3;
+}
+.slick-next {
+  right: 10px;
+}
+@media screen and (min-width: 480px) {
+  .slick-prev {
+    left: -20px;
+  }
+  .slick-next {
+    right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slick-prev {
+    left: -32px;
+  }
+  .slick-next {
+    right: -30px;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: pink;
+  font-size: 30px;
 }
